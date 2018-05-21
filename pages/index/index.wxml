@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<import src="../../pages/index/posts.wxml" />
+<import src="../../pages/index/search.wxml" />
+<import src="../../pages/index/tag.wxml" />
+<import src="../../pages/index/member.wxml" />
+
+<template is="{{page}}" data="{{...pageData}}"></template>
+<TabBar isPx="{{isPx}}" tabBar="{{tabBar}}" bindtouchTabBar="touchTab"></TabBar>

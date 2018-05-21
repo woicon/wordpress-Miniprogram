@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "TabBar": "../../components/TabBar/TabBar",
+        "Loading":"../../components/Loading/Loading"
+    },
+    "window":{
+        "backgroundColor":"#222222",
+        "backgroundTextStyle":"light",
+        "onReachBottomDistance":"100px"
+    }
+}

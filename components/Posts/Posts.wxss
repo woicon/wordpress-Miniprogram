@@ -1,0 +1,39 @@
+
+.post {
+    margin: 0 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30rpx 0;
+    border-bottom: 1px solid #eee;
+}
+
+.post-touch{
+    opacity:.6;
+}
+
+.post-img {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.post-img image {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.post-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-date {
+    font-size: 23rpx;
+    color: #999;
+    margin-top:10rpx;
+}
+
+.post-titles {
+    margin-right: 20rpx;
+}

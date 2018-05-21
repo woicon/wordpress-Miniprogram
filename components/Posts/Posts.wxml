@@ -1,0 +1,49 @@
+<template  name="home">
+<view wx:if="{{downRefresh}}" class='page-refresh'>
+    <Loading></Loading>
+</view>
+<view class='category-ico' bindtap='showCat'>
+    <view class='ico icon-menu'></view>
+</view>
+<view class='cat-page' bindtap='togglePosts' wx:if="{{catMask}}">
+    <view id="{{item.id}}" data-index="{{index}}" class='cat-item {{currentCat == index ?"active":""}}' wx:for="{{categories}}" wx:key="categorys">{{item.name}}</view>
+</view>
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" current="1" autoplay="{{autoplay}}" interval="{{interval}}" previous-margin="60rpx" next-margin="60rpx" duration="{{duration}}">
+    <block wx:for="{{hotCategory}}" wx:key="hotCategory">
+        <swiper-item class="hot-banner">
+            <view class='hot-inner'>
+                <image src="{{item.postImg}}" class="slide-image" width="100%" />
+                <view class='post-title'>{{item.postTitle}}</view>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+<view class='category' wx:if="{{!!catMask}}">
+    <scroll-view scroll-x>
+        <view class='category-warp' bindtap='togglePosts' style='width:{{categories.length*(160+40)}}rpx'>
+            <view id="{{item.id}}" data-index="{{index}}" class='category-item {{currentCat == index ?"active":""}}' wx:for="{{categories}}" wx:key="categorys">{{item.name}}</view>
+            <view class='category-line' style="left:{{catActiveLeft}}px"></view>
+        </view>
+    </scroll-view>
+</view>
+<view wx:if="{{postLoading}}" class='post-loading'>
+    <Loading></Loading>
+</view>
+<view wx:else>
+    <view class='post' hover-class='post-touch' wx:for="{{posts}}" wx:key="allcat" bindtap='toDdetail' id="{{item.id}}">
+        <view class='post-cont'>
+            <view class='post-titles'>{{item.title.rendered}}</view>
+            <view class='post-date'>{{item.date}}</view>
+        </view>
+        <view class='post-img'>
+            <image src='http://mpic.tiankong.com/627/8b4/6278b43f32438c8cc09ad896bd621b0f/640.jpg@!670w'></image>
+        </view>
+    </view>
+    <view wx:if="{{pageToBottom}}">
+        <view class='bottom-loading flex-center'>
+            <view wx:if="{{moreOver}}">没有更多</view>
+            <Loading wx:else></Loading>
+        </view>
+    </view>
+</view>
+</template>

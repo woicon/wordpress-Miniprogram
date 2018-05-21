@@ -1,0 +1,11 @@
+
+<template  name="member">
+    <view wx:if="allowInfoStat" class='flex-center'>
+        <view class='views'>需要您授权获取用户信息，才能使用该功能！</view>
+        <button open-type='getUserinfo' bindgetuserinfo='getUserInfo'>授权获取用户信息</button>
+    </view>
+
+    <view wx:else>
+        <view></view>
+    </view>
+</template>

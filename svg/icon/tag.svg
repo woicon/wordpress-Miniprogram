@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ico/tag</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ico/tag" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M40.5,11 L40.5,5 C40.5,4.17157288 39.8284271,3.5 39,3.5 L11,3.5 C10.1715729,3.5 9.5,4.17157288 9.5,5 L9.5,11 L40.5,11 Z M40.5,14 L9.5,14 L9.5,44.3104787 L24.2117607,35.223803 C24.694891,34.925399 25.305109,34.925399 25.7882393,35.223803 L40.5,44.3104787 L40.5,14 Z M8.78823932,48.276197 C7.78890632,48.8934321 6.5,48.1745832 6.5,47 L6.5,5 C6.5,2.51471863 8.51471863,0.5 11,0.5 L39,0.5 C41.4852814,0.5 43.5,2.51471863 43.5,5 L43.5,47 C43.5,48.1745832 42.2110937,48.8934321 41.2117607,48.276197 L25,38.2630507 L8.78823932,48.276197 Z" id="Combined-Shape" fill="#979797" fill-rule="nonzero"></path>
+    </g>
+</svg>

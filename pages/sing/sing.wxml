@@ -1,0 +1,31 @@
+<!--pages/sing/sing.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+
+<view wx:if="{{loading}}" class='page-loading'>
+    <Loading></Loading>
+</view>
+
+<block wx:else>
+    <scroll-view scroll-y class='sing-scroll' style='bottom:{{isPx?"150":"110"}}rpx'>
+        <view class='html'>
+            <view class='sing-head'>
+                <view class='sing-title'>
+                    {{title}}
+                </view>
+                <view class='sing-time'>{{time}}</view>
+            </view>
+            <!-- <rich-text nodes="{{html}}" bindtap="tap"></rich-text> -->
+            <view class="wxParse">
+                <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+            </view>
+        </view>
+    </scroll-view>
+</block>
+
+<view class='sing-bar {{isPx?"iphonex":""}}'>
+    <view class='sing-tool'>
+        <view class='ico icon-like{{favSing?"-sel fav":""}}' bindtap='favSing'> </view>
+        <button class='ico icon-share share' bindtap='shareSing' open-type="share"> </button>
+    </view>
+    <view class='ico icon-more'></view>
+</view>

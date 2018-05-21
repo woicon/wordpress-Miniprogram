@@ -1,0 +1,14 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/sing/sing",
+        "pages/search/search"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#222",
+        "navigationBarTitleText": "Read&&New",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    }
+}

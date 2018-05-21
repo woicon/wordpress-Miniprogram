@@ -1,0 +1,7 @@
+<template  name="search">
+    <view wx:if="allowInfoStat" class='flex-center'>
+        <form >
+            <input bindconfirm='searchPage' placeholder='输入关键词搜索' class='search-input' confirm-type="search" ></input>
+        </form>
+    </view>
+</template>

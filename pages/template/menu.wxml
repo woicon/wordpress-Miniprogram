@@ -1,0 +1,19 @@
+<template name="pageMenu">
+    <view class='category-ico' bindtap='showCat'>
+        <view class='ico icon-menu'></view>
+    </view>
+    <view class='cat-page' bindtap='togglePosts' wx:if="{{catMask}}">
+        <view id="{{item.id}}" data-index="{{index}}" class='cat-item {{currentCat == index ?"active":""}}' wx:for="{{categories}}" wx:key="categorys">{{item.name}}</view>
+    </view>
+</template>
+
+<template name="tabMenu">
+    <view class='category' wx:if="{{!!catMask}}">
+        <scroll-view scroll-x>
+            <view class='category-warp' bindtap='togglePosts' style='width:{{categories.length*(160+40)}}rpx'>
+                <view id="{{item.id}}" data-index="{{index}}" class='category-item {{currentCat == index ?"active":""}}' wx:for="{{categories}}" wx:key="categorys">{{item.name}}</view>
+                <view class='category-line' style="left:{{catActiveLeft}}px"></view>
+            </view>
+        </scroll-view>
+    </view>
+</template>

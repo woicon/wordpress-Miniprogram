@@ -1,0 +1,37 @@
+@import "../../fontico/fontico.wxss";
+/* TABBAR */
+.tabbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:100;
+}
+
+.tabbar.iphonex {
+    padding-bottom: 50rpx;
+}
+
+.tabbar-item {
+    font-size: 30rpx;
+    width: 25%;
+    height: 100rpx;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ;
+}
+
+.tabbar-item .ico {
+    font-size: 48rpx;
+    color: #999;
+}
+
+.tabbar-item.active .ico {
+    color: #fff;
+}

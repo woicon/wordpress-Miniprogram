@@ -1,0 +1,5 @@
+<view class='tabbar {{isPx?"iphonex":""}}'>
+    <view wx:for="{{tabBar}}" class='tabbar-item {{currTab==index?"active":""}}' wx:key="tabBar" bindtap='touchTabBar' id="{{index}}" data-detail="{{item}}">
+        <view class='ico icon-{{item.icon}}{{currTab==index?"-sel":""}}'></view>
+    </view>
+</view>
